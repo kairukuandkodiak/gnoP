@@ -1,12 +1,21 @@
-[gd_scene format=3 uid="uid://byr1rvie2iuf"]
+[gd_scene format=4 uid="uid://byr1rvie2iuf"]
 
 [ext_resource type="Script" uid="uid://bqchoim2kkjwx" path="res://farmer.gd" id="1_r62q1"]
 [ext_resource type="Texture2D" uid="uid://hi3xmuwqqcee" path="res://icon.svg" id="2_hjufs"]
+[ext_resource type="TileSet" uid="uid://br0bfdk6optss" path="res://Ground.tres" id="3_hjufs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3uk7"]
 size = Vector2(120, 120)
 
 [node name="Farmland" type="Node2D" unique_id=1070924752]
+
+[node name="Animal" type="Node2D" parent="." unique_id=1462942893]
+
+[node name="Market" type="Node2D" parent="." unique_id=1710842932]
+
+[node name="Layout" type="TileMapLayer" parent="." unique_id=497895568]
+tile_map_data = PackedByteArray("AAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAADAAAAAAAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAADAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAMAAAAAAAAAAAAGAAQAAAAAAAAAAAAHAAAAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAHAAQAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAAAAAAIAAMAAAAAAAAAAAAIAAQAAAAAAAAAAAA=")
+tile_set = ExtResource("3_hjufs")
 
 [node name="Farmer" type="CharacterBody2D" parent="." unique_id=1050562174]
 script = ExtResource("1_r62q1")
@@ -17,6 +26,4 @@ texture = ExtResource("2_hjufs")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Farmer" unique_id=2057138496]
 shape = SubResource("RectangleShape2D_p3uk7")
 
-[node name="Animal" type="Node2D" parent="." unique_id=1462942893]
-
-[node name="Market" type="Node2D" parent="." unique_id=1710842932]
+[node name="Camera2D" type="Camera2D" parent="Farmer" unique_id=1875018479]
