@@ -1,0 +1,14 @@
+[gd_resource type="TileSet" format=3 uid="uid://5gvpg3iqsp4x"]
+
+[ext_resource type="Texture2D" uid="uid://bhkqopsl27a8b" path="res://BasicChicken.png" id="1_82gjq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_umw82"]
+texture = ExtResource("1_82gjq")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[resource]
+tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_umw82")
