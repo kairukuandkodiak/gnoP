@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://byr1rvie2iuf"]
+
+[ext_resource type="PackedScene" uid="uid://bqwbfpg600rv4" path="res://Player.tscn" id="1_2dftf"]
+[ext_resource type="PackedScene" uid="uid://rhtvsdgbk10q" path="res://Fence.tscn" id="2_bcbcq"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_js7pq"]
+resource_name = "fence"
+scenes/1/scene = ExtResource("2_bcbcq")
+
+[sub_resource type="TileSet" id="TileSet_eu7l1"]
+tile_size = Vector2i(128, 128)
+sources/0 = SubResource("TileSetScenesCollectionSource_js7pq")
+
+[node name="World" type="Node2D" unique_id=1070924752]
+
+[node name="Farmer" parent="." unique_id=1787132586 instance=ExtResource("1_2dftf")]
+
+[node name="TileMap" type="TileMap" parent="." unique_id=355025573]
+tile_set = SubResource("TileSet_eu7l1")
+format = 2
+layer_0/name = "fence"
+layer_0/tile_data = PackedInt32Array(-131070, 0, 65536)

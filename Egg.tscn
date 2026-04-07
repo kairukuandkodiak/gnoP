@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://buk4a4ar1aamo"]
 
-[ext_resource type="Texture2D" uid="uid://bhkqopsl27a8b" path="res://BasicChicken.png" id="1_f5cpu"]
+[ext_resource type="Texture2D" uid="uid://bhkqopsl27a8b" path="res://BasicEgg.png" id="1_28s8g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bkdqd"]
 size = Vector2(124, 124)
 
-[node name="ChickenThing" type="Area2D" unique_id=511978709]
+[node name="Egg" type="Area2D" unique_id=511978709]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=420957308]
-texture = ExtResource("1_f5cpu")
+texture = ExtResource("1_28s8g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1253424683]
 shape = SubResource("RectangleShape2D_bkdqd")

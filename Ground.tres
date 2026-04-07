@@ -1,23 +1,5 @@
 [gd_resource type="TileSet" format=3 uid="uid://br0bfdk6optss"]
 
-[ext_resource type="Texture2D" uid="uid://chbjfxul71xnm" path="res://BasicDirt.png" id="1_mkkdd"]
-[ext_resource type="Texture2D" uid="uid://b0cp4oubia4f2" path="res://BasicFence.png" id="2_j5f70"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ing08"]
-resource_name = "Dirt"
-texture = ExtResource("1_mkkdd")
-texture_region_size = Vector2i(128, 128)
-0:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f4sg1"]
-resource_name = "Fence"
-texture = ExtResource("2_j5f70")
-texture_region_size = Vector2i(128, 128)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
-
 [resource]
 tile_size = Vector2i(128, 128)
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_ing08")
-sources/2 = SubResource("TileSetAtlasSource_f4sg1")

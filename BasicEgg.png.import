@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhkqopsl27a8b"
-path="res://.godot/imported/BasicChicken.png-9aabcbbbd85b3c9993c2b12366151d00.ctex"
+path="res://.godot/imported/BasicEgg.png-dde6b7e08f7ab8a39e1b46688ebe4003.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BasicChicken.png"
-dest_files=["res://.godot/imported/BasicChicken.png-9aabcbbbd85b3c9993c2b12366151d00.ctex"]
+source_file="res://BasicEgg.png"
+dest_files=["res://.godot/imported/BasicEgg.png-dde6b7e08f7ab8a39e1b46688ebe4003.ctex"]
 
 [params]
 
