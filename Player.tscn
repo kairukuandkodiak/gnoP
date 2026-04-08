@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://hi3xmuwqqcee" path="res://icon.svg" id="2_kne1u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3uk7"]
-size = Vector2(120, 120)
+size = Vector2(128, 128)
 
 [node name="Farmer" type="CharacterBody2D" unique_id=1787132586]
 collision_mask = 4

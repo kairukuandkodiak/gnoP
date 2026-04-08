@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://buk4a4ar1aamo"]
 
 [ext_resource type="Texture2D" uid="uid://bhkqopsl27a8b" path="res://BasicEgg.png" id="1_28s8g"]
+[ext_resource type="Script" uid="uid://k4mgyehved0w" path="res://Egg.gd" id="1_hgbad"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bkdqd"]
 size = Vector2(124, 124)
 
 [node name="Egg" type="Area2D" unique_id=511978709]
+script = ExtResource("1_hgbad")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=420957308]
 texture = ExtResource("1_28s8g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1253424683]
 shape = SubResource("RectangleShape2D_bkdqd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

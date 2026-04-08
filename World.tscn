@@ -15,8 +15,6 @@ sources/0 = SubResource("TileSetScenesCollectionSource_js7pq")
 
 [node name="Farmer" parent="." unique_id=1787132586 instance=ExtResource("1_2dftf")]
 
-[node name="TileMap" type="TileMap" parent="." unique_id=355025573]
+[node name="TileMap" type="TileMapLayer" parent="." unique_id=2124619421]
+tile_map_data = PackedByteArray(0, 0, 2, 0, 254, 255, 0, 0, 0, 0, 0, 0, 1, 0)
 tile_set = SubResource("TileSet_eu7l1")
-format = 2
-layer_0/name = "fence"
-layer_0/tile_data = PackedInt32Array(-131070, 0, 65536)
