@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://bqwbfpg600rv4"]
 
-[ext_resource type="Script" uid="uid://bqchoim2kkjwx" path="res://farmer.gd" id="1_kpjcp"]
-[ext_resource type="Texture2D" uid="uid://hi3xmuwqqcee" path="res://icon.svg" id="2_kne1u"]
+[ext_resource type="Script" uid="uid://bqchoim2kkjwx" path="res://Baller.gd" id="1_kpjcp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xhfnw"]
+load_path = "res://.godot/imported/SimpleBall.png-74ffc6c4dba129a60d3fcbb63892724f.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3uk7"]
-size = Vector2(128, 128)
+size = Vector2(32, 32)
 
 [node name="Farmer" type="CharacterBody2D" unique_id=1787132586]
 collision_mask = 4
 script = ExtResource("1_kpjcp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1796404195]
-texture = ExtResource("2_kne1u")
+texture = SubResource("CompressedTexture2D_xhfnw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272349861]
 shape = SubResource("RectangleShape2D_p3uk7")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1722241744]
