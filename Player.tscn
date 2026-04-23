@@ -8,7 +8,7 @@ load_path = "res://.godot/imported/SimpleBall.png-74ffc6c4dba129a60d3fcbb6389272
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p3uk7"]
 size = Vector2(32, 32)
 
-[node name="Farmer" type="CharacterBody2D" unique_id=1787132586]
+[node name="Ball" type="CharacterBody2D" unique_id=1787132586]
 collision_mask = 4
 script = ExtResource("1_kpjcp")
 
