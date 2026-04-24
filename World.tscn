@@ -3,7 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://bqwbfpg600rv4" path="res://Player.tscn" id="1_2dftf"]
 [ext_resource type="PackedScene" uid="uid://rhtvsdgbk10q" path="res://Wall.tscn" id="2_bcbcq"]
 [ext_resource type="PackedScene" uid="uid://dsjouh4fit1qw" path="res://Enemy.tscn" id="3_bcbcq"]
-[ext_resource type="Script" uid="uid://bm3jpuv7vfx5a" path="res://Enemy.gd" id="4_js7pq"]
+[ext_resource type="Script" uid="uid://bm3jpuv7vfx5a" path="res://EnemyR.gd" id="4_js7pq"]
+[ext_resource type="Script" uid="uid://c5hxoer8kpbf7" path="res://EnemyL.gd" id="5_eu7l1"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_js7pq"]
 resource_name = "fence"
@@ -23,8 +24,15 @@ tile_set = SubResource("TileSet_eu7l1")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=923964978]
 
-[node name="Enemy" parent="." unique_id=687970354 instance=ExtResource("3_bcbcq")]
-position = Vector2(560, 1)
+[node name="EnemyR" parent="." unique_id=687970354 instance=ExtResource("3_bcbcq")]
+position = Vector2(560, 0)
 script = ExtResource("4_js7pq")
 
-[connection signal="Level" from="Ball" to="Enemy" method="_on_ball_level"]
+[node name="EnemyL" parent="." unique_id=895103067 instance=ExtResource("3_bcbcq")]
+position = Vector2(-559, 0)
+script = ExtResource("5_eu7l1")
+
+[connection signal="Level" from="Ball" to="EnemyR" method="_on_ball_level"]
+[connection signal="Level" from="Ball" to="EnemyL" method="_on_ball_level"]
+[connection signal="Sides" from="Ball" to="EnemyR" method="_on_ball_sides"]
+[connection signal="Sides" from="Ball" to="EnemyL" method="_on_ball_sides"]
